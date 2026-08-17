@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aimrika — Etalonis, die Simulationsumgebung für Physical AI</title>
+<meta name="description" content="Aimrika entwickelt Etalonis — die Simulationsumgebung und digitale Zwillingsplattform, in der die Physical AI der Roboter von morgen entwickelt, getestet und validiert wird, bevor sie in der realen Welt zum Einsatz kommt." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%2337e0c8' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235b9dff'/%3E%3C/svg%3E" />
+<style>
+  .lang-switch {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    letter-spacing: 0.12em;
+    color: var(--faint);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 10px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .lang-switch:hover { color: var(--text); border-color: var(--border-strong); }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" stroke="url(#g1)" stroke-width="1.6"/>
+        <circle cx="16" cy="16" r="8.5" stroke="url(#g1)" stroke-width="1.2" opacity="0.6"/>
+        <circle cx="16" cy="16" r="3.2" fill="#5b9dff"/>
+        <path d="M16 0.5V6M16 26V31.5M0.5 16H6M26 16H31.5" stroke="#37e0c8" stroke-width="1.4" stroke-linecap="round"/>
+        <defs><linearGradient id="g1" x1="2" y1="2" x2="30" y2="30"><stop stop-color="#5b9dff"/><stop offset="1" stop-color="#37e0c8"/></linearGradient></defs>
+      </svg>
+      Aimrika <span class="suffix">GmbH</span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="#problem">Problem</a>
+      <a href="#range">Etalonis</a>
+      <a href="#platform">Plattform</a>
+      <a href="#build">Was wir bauen</a>
+      <a href="#founder">Gründer</a>
+      <a href="#contact" class="nav-cta">Kontakt</a>
+      <a href="https://aimrika.com" class="lang-switch">EN</a>
+    </nav>
+    <button class="nav-toggle" id="toggle" aria-label="Menü">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow reveal"><span class="dot"></span> Physical AI · Simulation &amp; digitale Zwillinge</span>
+    <h1 class="reveal">Wir bauen die KI, die <span class="grad">Physical AI</span> trainiert.</h1>
+    <p class="lede reveal">Aimrika entwickelt <strong>Etalonis</strong> — die <strong>Simulationsumgebung</strong>, eine Sandbox für die <strong>digitalen Zwillinge</strong> der Roboter von morgen, in der autonome KI <em>in großem Maßstab entwickelt, getestet und validiert</em> wird, bevor sie jemals in der realen Welt operiert. Etalonis ist das Flaggschiff. Vertrauenswürdige Autonomie ist das Produkt.</p>
+    <div class="btn-row reveal">
+      <a href="#range" class="btn btn-primary">Etalonis entdecken</a>
+      <a href="#contact" class="btn btn-ghost">Kontakt aufnehmen</a>
+    </div>
+    <div class="stats reveal" style="margin-top:64px">
+      <div class="stat"><div class="n">1.000s / Tag</div><div class="l">Szenarien in der Simulation</div></div>
+      <div class="stat"><div class="n">Monate → Wochen</div><div class="l">Entwicklung &amp; Validierung komprimiert</div></div>
+      <div class="stat"><div class="n">Ein System</div><div class="l">Simulation und Realität, direkt vergleichbar</div></div>
+      <div class="stat"><div class="n">Validiert</div><div class="l">gemessen am Goldstandard, nicht behauptet</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROBLEM ===== -->
+<section id="problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="label">Das Problem</div>
+      <h2>Vertrauenswürdige Physical AI lässt sich nicht allein in der realen Welt entwickeln.</h2>
+      <p>Roboter, Drohnen und autonome Fahrzeuge brauchen Millionen von Erfahrungen, um zuverlässig zu werden — doch die reale Welt kann diese nicht sicher, kostengünstig oder schnell genug liefern. Die Systeme, die am häufigsten getestet werden müssen, sind genau jene, die am schwersten und risikoreichsten zu betreiben sind.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="prob reveal"><h3><span class="idx">01</span> Reale Tests sind langsam und teuer</h3><p>Jeder reale Testlauf eines Roboters oder Fahrzeugs kostet Zeit, Hardware und Ingenieuraufwand — man kann nur eine Handvoll Iterationen pro Tag durchführen.</p></div>
+      <div class="prob reveal"><h3><span class="idx">02</span> Sicherheit begrenzt Live-Tests</h3><p>Man kann sich kein zuverlässiges autonomes System durch Unfälle erarbeiten. Die Verhaltensweisen, die eine Maschine wirklich autonom machen, sind genau jene, die sich am schwersten sicher einüben lassen.</p></div>
+      <div class="prob reveal"><h3><span class="idx">03</span> Die reale Welt bietet keine Skalierung</h3><p>Physical AI muss den gesunden Menschenverstand der Welt lernen — Schwerkraft, Trägheit, Objektpermanenz, Kausalität — unter Bedingungen, die kein Live-Programm reproduzieren kann.</p></div>
+      <div class="prob reveal"><h3><span class="idx">04</span> Edge Cases sind entscheidend</h3><p>Seltenes Wetter, Sensorausfälle, unerwartete Hindernisse — die Situationen, die am meisten zählen, sind genau jene, die man sich in der Realität am wenigsten leisten kann zu inszenieren.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ETALONIS ===== -->
+<section id="range">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="label">Die Lösung · unser Flaggschiff</div>
+      <h2>Etalonis — die Sandbox, in der Physical AI gebaut und bewiesen wird.</h2>
+      <p>Wir verlagern die Erfahrung in die Simulation und belassen nur das absolut Notwendige in der realen Welt. Eine hochpräzise Entwicklungs-, Test- und Validierungsumgebung, die täglich Tausende von Szenarien ausführt — und derselbe KI-Agent, der Etalonis besteht, läuft unverändert auf der echten Edge-Hardware der echten Maschine.</p>
+    </div>
+    <div class="arc">
+      <div class="arc-step reveal"><div class="step-n">SCHRITT 01</div><h4>Trainieren</h4><p>Der Agent lernt wahrzunehmen, zu navigieren, zu handeln, sich zu erholen und sich anzupassen — über Wetter, Gelände, Licht, Sensorrauschen und induzierte Ausfälle hinweg.</p></div>
+      <div class="arc-step reveal"><div class="step-n">SCHRITT 02</div><h4>Proben</h4><p>Die genaue Aufgabe — Umgebung, Route, Objekte, Bedingungen — wird standardmäßig in der Sandbox durchgeführt. Ein echter Generalprobe, ohne Risiko, ohne Kosten.</p></div>
+      <div class="arc-step reveal"><div class="step-n">SCHRITT 03</div><h4>Koordinieren</h4><p>Flotten von Robotern, Drohnen und Fahrzeugen lernen als Team zu operieren — die Multi-Agent-Probe, die die reale Welt selten leisten kann.</p></div>
+      <div class="arc-step reveal"><div class="step-n">SCHRITT 04</div><h4>Validieren</h4><p>Jedes Verhalten wird gegen ein Referenzsystem auf identischen Szenarien und identischer Physik verglichen — das Etalon.</p></div>
+      <div class="arc-step reveal"><div class="step-n">SCHRITT 05</div><h4>Einsetzen</h4><p>Der validierte Agent läuft auf der echten Maschine. Der reale Einsatz bestätigt; er entdeckt nicht erst.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===== PLATFORM / THREE COMPUTERS ===== -->
+<section id="platform">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="label">Die Plattform</div>
+      <h2>Die drei Computer der Physical AI.</h2>
+      <p>Physical AI steht auf drei Computern: einem zum Trainieren des Modells, einem zum Simulieren der Welt und einem zum Ausführen von Inferenz am Edge. Wir bauen den, der am meisten zählt, wenn man in der Realität nicht iterieren kann — den Simulationscomputer — und machen ihn zur Validierungsinstanz.</p>
+    </div>
+    <div class="three">
+      <div class="tc reveal"><div class="tag">Computer 01</div><h3>Trainieren</h3><p>Die KI wird auf handelsüblichen GPUs trainiert — die KI-Fabrik, die Daten und Erfahrung in Fähigkeiten umwandelt.</p></div>
+      <div class="tc flag reveal"><div class="tag">Computer 02 · Flaggschiff</div><h3>Simulieren — Etalonis</h3><p>Das Weltmodell und die Sandbox, in der der Agent Tausende von Leben in digitalen Zwillingen lebt. Hier wird der Agent in einem Maßstab und mit einer Geschwindigkeit gebaut und validiert, die die reale Welt nicht erreichen kann — und wir fügen hinzu, was allgemeine Weltmodelle fehlt: eine Validierungsinstanz.</p><span class="pill">Das bauen wir</span></div>
+      <div class="tc reveal"><div class="tag">Computer 03</div><h3>Inferenz am Edge</h3><p>Der validierte Agent läuft auf einem Edge-Modul an Bord der echten Maschine — Wahrnehmung zu Entscheidung zu Aktion in Echtzeit, auf dem Gerät, ohne Cloud und ohne Operator.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AUTONOMY AS CODE ===== -->
+<section id="programmatic">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="label">Autonomie als Code</div>
+      <h2>Wenn Autonomie Software ist, folgt sie dem Software-Lebenszyklus.</h2>
+      <p>Das Verhalten programmieren, es in der Simulations-Sandbox proben, gegen das Etalon validieren und erst dann einsetzen — genau der Lebenszyklus, den Software bereits hat. Etalonis ist die Entwicklungsumgebung für Physical AI.</p>
+    </div>
+    <div class="table-card reveal">
+      <table>
+        <thead><tr><th>Software-Lebenszyklus</th><th>Was wir ermöglichen — Autonomie als Code</th></tr></thead>
+        <tbody>
+          <tr><td>Code schreiben</td><td>Verhalten programmieren — Aufgabe und Handlungsablauf</td></tr>
+          <tr><td>Test in CI / Sandbox</td><td>Proben in der Simulations-Sandbox — der Trockenlauf</td></tr>
+          <tr><td>Review-Gate</td><td>Validierung gegen das Etalon — den Goldstandard</td></tr>
+          <tr><td>Deploy in Produktion</td><td>Einsatz auf der echten Maschine</td></tr>
+          <tr><td>Laufzeit &amp; Observability</td><td>Live-Edge-Inferenz, Telemetrie und Bewertung</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT WE BUILD ===== -->
+<section id="build">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="label">Was wir bauen</div>
+      <h2>Eine Engine. Ein Flaggschiff, seine digitalen Zwillinge und die Anwendungen.</h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 18v3M16 18v3M6 21h12"/></svg>
+        <div class="role">Flaggschiff</div>
+        <h3>Etalonis</h3>
+        <p>Die Simulationsumgebung — die digitale Zwillingsplattform für Physical AI. Autonomie in großem Maßstab trainieren, proben, koordinieren und validieren, dann unverändert am Edge einsetzen.</p>
+      </div>
+      <div class="card reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-5Z"/><path d="M12 8v5M9.5 10.5 12 13l2.5-2.5"/></svg>
+        <div class="role">Digitale Zwillinge</div>
+        <h3>Hochpräzise Zwillinge</h3>
+        <p>Fotorealistische, physikgenaue Zwillinge von Robotern, Drohnen, Bodenfahrzeugen und Schiffen — damit die KI an Bord vieler Maschinen gemeinsam trainiert, synchronisiert und validiert werden kann, lange vor dem echten Einsatz.</p>
+      </div>
+      <div class="card reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg>
+        <div class="role">Anwendungen</div>
+        <h3>Autonomie branchenübergreifend</h3>
+        <p>Eine Engine für Inspektion, Logistik, Mobilität, Landwirtschaft, Kartierung, Maritime, Energie und Such- und Rettungseinsätze — überall dort, wo autonome Maschinen eigenständig handeln müssen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ===== ETALON ===== -->
+<section id="etalon">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <div class="label">Die Etalon-Methode</div>
+        <h2>Beweisen, nicht behaupten.</h2>
+        <p style="color:var(--muted);margin-top:16px">Keine Fähigkeit gilt als „fertig", bis sie ein Referenzsystem reproduzierbar übertrifft. Ein reifes Referenzsystem führt die Aufgabe auf identischen Szenarien unter identischer Physik aus; sein Ergebnis ist die erreichbare Obergrenze. Der Agent führt dann dieselbe Aufgabe aus — und weil alles außer <em>wer handelt</em> konstant gehalten wird, ist jeder Unterschied rein dem Agenten zuzuschreiben. Etalonis ist nach diesem Standard benannt — dem <em>Étalon</em>, der Referenz, an der alles gemessen wird.</p>
+        <ul>
+          <li><strong>Die Simulation ist die Autorität, nicht die Demo.</strong> Etalonis ist der Ort, an dem Autonomie gebaut und validiert wird; die reale Welt bestätigt es.</li>
+          <li><strong>Eine einzige Quelle der Wahrheit.</strong> Jedes Verhalten, jeder Benchmark und jede Entscheidung ist nachvollziehbar — Vertrauen wird durch Auditierbarkeit verdient.</li>
+          <li><strong>Ehrlich per Design.</strong> Ein System bewertet beide Welten, sodass die Lücke zwischen Simulation und Realität gemessen, nicht versteckt wird. Wir liefern nie, was wir nicht gemessen haben.</li>
+        </ul>
+      </div>
+      <div class="etalon-viz reveal">
+        <div class="row"><span>// Validierungslauf</span><span class="ok">BESTANDEN</span></div>
+        <div class="row"><span>Etalon · Spurabweichung</span><span>1,00×</span></div>
+        <div class="row"><span>Agent · Spurabweichung</span><span class="ok">0,94×</span></div>
+        <div class="row"><span>Sensorausfall-Erholung</span><span class="ok">✓</span></div>
+        <div class="row"><span>Simulation-zu-Real-Lücke</span><span>gemessen</span></div>
+        <div class="row"><span>Reproduzierbar</span><span class="ok">100 / 100</span></div>
+        <div class="row"><span>Ergebnis</span><span class="ok">validiert</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOUNDER ===== -->
+<section id="founder">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="label">Führung</div></div>
+    <div class="founder reveal">
+      <div class="founder-photo">VL</div>
+      <div>
+        <h3>Volodymyr Levykin</h3>
+        <div class="who">Gründer &amp; Chief Executive</div>
+        <p>Volodymyr ist Gründer von <a class="link" href="https://www.skyrora.com" target="_blank" rel="noopener">Skyrora</a>, dem britischen Orbital-Raumfahrtunternehmen — einem Deep-Tech-Unternehmen, das Raketentriebwerke und Trägersysteme in Großbritannien und Europa entworfen, gebaut und getestet hat. Seine Karriere widmete er der Überführung anspruchsvoller Ingenieursleistungen in einsatzbereite Systeme.</p>
+        <p>Aimrika setzt diese Mission an einer neuen Frontier fort: autonomen Maschinen die Proving Ground zu geben, die sie brauchen, um als vertrauenswürdig zu gelten. Die Überzeugung ist dieselbe — echte Fähigkeit, ehrlich aufgebaut, bewiesen bevor sie ausgeliefert wird.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div class="label" style="color:var(--accent-2)">Kontakt aufnehmen</div>
+      <h2>Wir bauen die Proving Ground für Physical AI.</h2>
+      <p style="color:var(--muted);max-width:52ch;margin:16px auto 0">Für Anfragen zu Partnerschaften, Pilotprojekten und Kooperationen oder zur Vereinbarung eines Briefings zu Etalonis.</p>
+      <div class="grid">
+        <div class="box"><div class="k">E-Mail</div><div class="v"><a href="mailto:info@aimrika.com">info@aimrika.com</a></div></div>
+        <div class="box"><div class="k">Unternehmen</div><div class="v">Aimrika GmbH <span style="color:var(--faint)">(in Gründung)</span></div></div>
+        <div class="box"><div class="k">Sitz</div><div class="v">Eschborn, Region Frankfurt&nbsp;/&nbsp;Main, Deutschland</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap foot">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" stroke="url(#g2)" stroke-width="1.6"/>
+        <circle cx="16" cy="16" r="3.2" fill="#5b9dff"/>
+        <path d="M16 0.5V6M16 26V31.5M0.5 16H6M26 16H31.5" stroke="#37e0c8" stroke-width="1.4" stroke-linecap="round"/>
+        <defs><linearGradient id="g2" x1="2" y1="2" x2="30" y2="30"><stop stop-color="#5b9dff"/><stop offset="1" stop-color="#37e0c8"/></linearGradient></defs>
+      </svg>
+      Aimrika GmbH
+    </div>
+    <div class="foot-links">
+      <a href="#range">Etalonis</a>
+      <a href="#platform">Plattform</a>
+      <a href="#founder">Gründer</a>
+      <a href="#contact">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="https://aimrika.com" style="color:var(--faint)">aimrika.com (EN)</a>
+    </div>
+    <div class="legal">
+      © <span id="yr"></span> Aimrika GmbH (in Gründung) · Eschborn, Deutschland. Wir bauen die Simulationsumgebung für Physical AI — Entwicklung, Test und Validierung für Robotik und autonome Systeme.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var t = document.getElementById('toggle'), m = document.getElementById('menu');
+  t.addEventListener('click', function(){ m.classList.toggle('open'); });
+  m.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ m.classList.remove('open'); }); });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
