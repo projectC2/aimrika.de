@@ -192,9 +192,9 @@
       bewiesen und mit der Roadmap auf Boden- und maritime Roboter verallgemeinert.</p>
     </div>
     <div class="stats reveal">
-      <div class="stat"><div class="n">~110.000</div><div class="l">annotierte Bilder über 23 Modellfamilien</div></div>
-      <div class="stat"><div class="n">~95 %</div><div class="l">erreichte Erkennungsgenauigkeit</div></div>
-      <div class="stat"><div class="n">Closed-Loop</div><div class="l">Objekterkennungs- und Lokalisierungs-Pipeline auf eingebetteter Hardware</div></div>
+      <div class="stat"><div class="n">24</div><div class="l">trainierte KI-Modelle in 9 Architekturvarianten</div></div>
+      <div class="stat"><div class="n">0,933 mAP50</div><div class="l">maritime Schiffserkennung im Produktiveinsatz, 64 FPS auf Edge-Hardware</div></div>
+      <div class="stat"><div class="n">Closed-Loop</div><div class="l">Echtzeit-Objekterkennung und -Lokalisierung auf eingebetteter Hardware, Hardware-in-the-Loop gegen eine Live-Simulation</div></div>
       <div class="stat"><div class="n">GPS-frei</div><div class="l">visuelle Ortserkennung für Navigation ohne Satellitenpositionierung</div></div>
     </div>
     <div class="table-card reveal" style="margin-top:32px">
@@ -235,7 +235,7 @@
     <div class="three">
       <div class="tc reveal"><div class="tag">Computer 01</div><h3>Trainieren</h3><p>Die KI wird auf handelsüblichen GPUs trainiert — die KI-Fabrik, die Daten und Erfahrung in Fähigkeiten umwandelt.</p></div>
       <div class="tc flag reveal"><div class="tag">Computer 02 · Flaggschiff</div><h3>Simulieren — Etalonis</h3><p>Das Weltmodell und die Sandbox, in der der Agent Tausende von Leben in digitalen Zwillingen lebt. Hier wird der Agent in einem Maßstab und mit einer Geschwindigkeit gebaut und validiert, die die reale Welt nicht erreichen kann — und wir fügen hinzu, was allgemeine Weltmodelle fehlt: eine Validierungsinstanz.</p><span class="pill">Das bauen wir</span></div>
-      <div class="tc reveal"><div class="tag">Computer 03</div><h3>Inferenz am Edge</h3><p>Der validierte Agent läuft auf einem Edge-Modul an Bord der echten Maschine — Wahrnehmung zu Entscheidung zu Aktion in Echtzeit, auf dem Gerät, ohne Cloud und ohne Operator.</p></div>
+      <div class="tc reveal"><div class="tag">Computer 03</div><h3>Inferenz am Edge</h3><p>Der validierte Agent läuft auf einem Edge-Modul an Bord der echten Maschine — Wahrnehmung zu Entscheidung zu Aktion in Echtzeit, auf dem Gerät, ohne Cloud und ohne Operator. Eine durchgängige Pipeline (PyTorch → ONNX → TensorRT FP16) bringt ein Modell vom Training bis in den Einsatz, gebenchmarkt auf Edge-Hardware von 13 bis 100 TOPS.</p></div>
     </div>
   </div>
 </section>
