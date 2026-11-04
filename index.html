@@ -45,6 +45,7 @@
       <a href="#platform">Plattform</a>
       <a href="#build">Was wir bauen</a>
       <a href="#founder">Gründer</a>
+      <a href="#team">Team</a>
       <a href="#contact" class="nav-cta">Kontakt</a>
       <a href="https://aimrika.com" class="lang-switch">EN</a>
     </nav>
@@ -144,13 +145,37 @@
   </div>
 </section>
 
-<!-- ===== WARUM DAS ZÄHLT — REGULATORISCHES FALLBEISPIEL ===== -->
+<!-- ===== WARUM DAS ZÄHLT — NORMEN, NACH DENEN WIR TESTEN UND VALIDIEREN ===== -->
 <section id="why-it-matters">
   <div class="wrap">
-    <div class="split">
+    <div class="section-head reveal">
+      <div class="label">Warum das zählt · die Normen, nach denen wir testen und validieren</div>
+      <h2>Nachweise, mit denen Integratoren und Behörden arbeiten können.</h2>
+      <p>Roboter, Fahrzeuge, Schiffe und Luftfahrzeuge, die in der Nähe von Menschen arbeiten, brauchen
+      den Nachweis, dass ihre KI auf der Hardware, auf der sie tatsächlich läuft, genau und robust ist.
+      Die Regeln für diesen Nachweis werden gerade geschrieben. Jeder Validierungslauf in Etalonis ist
+      darauf ausgelegt, ihn zu erzeugen, nach den einschlägigen Teilen dieser Normen. Wir folgen ihnen;
+      eine Zertifizierung danach beanspruchen wir nicht.</p>
+    </div>
+    <div class="table-card reveal">
+      <table>
+        <thead><tr><th>Norm</th><th>Wie wir sie nutzen</th></tr></thead>
+        <tbody>
+          <tr><td>Maschinenverordnung (EU) 2023/1230 (gilt ab 20. Januar 2027) und EN ISO 10218-2:2025</td><td>Die Anforderungen an KI-gestützte Maschinen und kollaborative Roboteranwendungen. Integratoren müssen zeigen, dass ihre KI die Leistung erbringt; wir erzeugen diesen Nachweis.</td></tr>
+          <tr><td>ISO/IEC TR 5469</td><td>KI wird nicht als Sicherheitsfunktion deklariert. Der Personenschutz bleibt bei zertifizierten Sicherheitseinrichtungen; unsere Detektoren liefern die Nachweise zu Erkennungsrate und Latenz. Nachweis, keine Zertifizierung.</td></tr>
+          <tr><td>AI Act Art. 15</td><td>Anforderungen an Genauigkeit und Robustheit von KI-Systemen, gemessen je Modell und je Hardware-Stufe.</td></tr>
+          <tr><td>prEN 18281 (Entwurf)</td><td>Bewertung der Genauigkeit von Computer-Vision-Systemen. Den Teilen zur Objekterkennung folgen wir bereits heute.</td></tr>
+          <tr><td>prEN 18229-4 / -5 (Entwurf)</td><td>Genauigkeit und Robustheit von KI-Systemen.</td></tr>
+          <tr><td>ISO/IEC TR 24029-1</td><td>Bewertung der Robustheit neuronaler Netze.</td></tr>
+          <tr><td>ISO/IEC 5338 und ISO/IEC 5259</td><td>Lebenszyklus von KI-Systemen und Datenqualität, in ihren einschlägigen Teilen für Verifikation und Datenqualität befolgt.</td></tr>
+          <tr><td>MLPerf-Inference-Methodik (Edge)</td><td>Unsere Bewertungsdisziplin: ein festes Referenzmodell, ein fester Testdatensatz und eine Untergrenze für den Genauigkeitserhalt. Keine MLPerf-Einreichung.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="split" style="margin-top:56px">
       <div class="reveal">
-        <div class="label">Warum das zählt · ein reales Beispiel</div>
-        <h2>Eine Zulassung. Tausend Flüge. Monate, nicht Minuten.</h2>
+        <div class="label">Ein Beispiel unter mehreren · Luftfahrt</div>
+        <h3>Eine Zulassung. Tausend Flüge. Monate, nicht Minuten.</h3>
         <p style="color:var(--muted);margin-top:16px">Nach der EU-Drohnenverordnung (2019/947) verlässt
         eine Drohne über 25 kg — oder eine, die außerhalb der Sichtweite, über 120 m oder über Menschen
         fliegt — die gering regulierte „Open"-Kategorie und benötigt eine vollständige Risikobewertung
@@ -189,30 +214,30 @@
     <div class="section-head reveal">
       <div class="label">Heute bewiesen, nicht versprochen</div>
       <h2>Die technische Grundlage existiert bereits.</h2>
-      <p>Etalonis ist kein Konzept — es ist laufende Infrastruktur, zuerst auf einer Fluggeräte-Plattform
-      bewiesen und mit der Roadmap auf Boden- und maritime Roboter verallgemeinert.</p>
+      <p>Etalonis ist kein Konzept — es ist laufende Infrastruktur: eine Validierungsleiter von der
+      Simulation über Software-in-the-Loop bis zu Hardware-in-the-Loop auf produktiver Edge-Hardware, in
+      der jeder Lauf gegen ein Referenzergebnis bewertet wird. Zuerst auf einer Luftfahrtplattform
+      bewiesen, gilt dieselbe Methode für Boden-, maritime und Industrieroboter.</p>
     </div>
     <div class="stats reveal">
-      <div class="stat"><div class="n">24</div><div class="l">trainierte KI-Modelle in 9 Architekturvarianten</div></div>
-      <div class="stat"><div class="n">0,933 mAP50</div><div class="l">maritime Schiffserkennung im Produktiveinsatz, 64 FPS auf Edge-Hardware</div></div>
-      <div class="stat"><div class="n">Closed-Loop</div><div class="l">Echtzeit-Objekterkennung und -Lokalisierung auf eingebetteter Hardware, Hardware-in-the-Loop gegen eine Live-Simulation</div></div>
-      <div class="stat"><div class="n">GPS-frei</div><div class="l">visuelle Ortserkennung für Navigation ohne Satellitenpositionierung</div></div>
+      <div class="stat"><div class="n">17</div><div class="l">eigene Vision-Modelle — Objekterkennung, Klassifikation und semantische Segmentierung (YOLO11 und YOLO26 in den Größen n bis x, dazu ein DeepLabV3+-Segmentierer)</div></div>
+      <div class="stat"><div class="n">22</div><div class="l">Detektoren und Klassifikatoren gebenchmarkt — 16 eigene und 6 Hersteller- bzw. vortrainierte Modelle</div></div>
+      <div class="stat"><div class="n">0,947 mAP50</div><div class="l">Produktions-Detektor — 63,7 FPS DeepStream-Inferenz und 39,9 FPS Ende-zu-Ende auf Jetson Orin Nano (FP16)</div></div>
+      <div class="stat"><div class="n">4 von 5</div><div class="l">Stufen der Validierungsleiter regressionsgesichert, bis Hardware-in-the-Loop mit realer Videoeinspeisung</div></div>
     </div>
     <div class="table-card reveal" style="margin-top:32px">
       <table>
         <thead><tr><th>Fähigkeit</th><th>Was das in der Praxis bedeutet</th></tr></thead>
         <tbody>
-          <tr><td>Visual Place Recognition (VPR)</td><td>Der Agent lokalisiert sich anhand dessen, was er
-          sieht, nicht per GPS — bewiesen in Umgebungen, in denen die Satellitenpositionierung verweigert,
-          gestört oder gefälscht wird.</td></tr>
-          <tr><td>Multi-Agent-Probe</td><td>Flotten von Maschinen lernen zu koordinieren — der gemeinsame
-          und sichere Betrieb, den reale Tests selten in großem Maßstab leisten können.</td></tr>
-          <tr><td>Simulation-zu-Real-Lücke, gemessen</td><td>Ein Bewertungssystem führt sowohl Simulation
-          als auch Realität aus, sodass die Lücke zwischen beiden eine gemessene Zahl ist, keine
-          Hoffnung.</td></tr>
-          <tr><td>Plattformunabhängig</td><td>Zuerst auf einer Fluggeräte-Plattform gebaut; dieselbe
-          Umgebung, Methodik und Edge-Compute-Architektur verallgemeinern auf Boden- und maritime
-          Roboter.</td></tr>
+          <tr><td>Lücke zwischen Host und Gerät, gemessen</td><td>Dieselbe Bewertung läuft auf dem
+          Trainingsrechner und auf dem Edge-Gerät, sodass der Genauigkeitsverlust dazwischen eine
+          gemessene Zahl ist, keine Hoffnung.</td></tr>
+          <tr><td>Stack-übergreifendes Benchmarking</td><td>Jedes Modell wird über Größen,
+          Architekturgenerationen, Geräte und Software-Stacks (TensorRT/DeepStream, ONNX Runtime) hinweg
+          verglichen. Ein externer ROS-2-/Docker-Autonomie-Stack wurde auf unserer eigenen
+          Jetson-Hardware gebenchmarkt.</td></tr>
+          <tr><td>Plattformunabhängig</td><td>Zuerst auf einer Luftfahrtplattform gebaut; dieselbe
+          Methodik und Edge-Compute-Architektur gelten für Boden-, maritime und Industrieroboter.</td></tr>
           <tr><td>Hardware-Right-Sizing</td><td>Wir validieren nicht nur die KI — wir sagen Ihnen auch,
           worauf sie laufen soll. Jede Workload wird der günstigsten und sparsamsten Hardware-Stufe
           zugeordnet, die ihre Leistungsanforderung noch erfüllt — von einem Raspberry Pi 5 über die
@@ -221,6 +246,9 @@
         </tbody>
       </table>
     </div>
+    <p class="reveal" style="color:var(--muted);margin-top:20px"><strong>Auf der Roadmap, noch nicht
+    demonstriert:</strong> visuelle Ortserkennung (Lokalisierung anhand dessen, was die Maschine sieht,
+    ohne Satellitenpositionierung) und Multi-Agent-Proben im Flottenmaßstab.</p>
     <!-- T5377: Weiterführender CTA zur eigenständigen Produktseite etalonis.com (live seit 2026-09-23). -->
     <div class="reveal" style="text-align:center;margin-top:48px">
       <a href="https://etalonis.com" class="btn btn-primary" target="_blank" rel="noopener">Zur vollständigen technischen Etalonis-Seite →</a>
@@ -312,7 +340,7 @@
         <ul>
           <li><strong>Die Simulation ist die Autorität, nicht die Demo.</strong> Etalonis ist der Ort, an dem Autonomie gebaut und validiert wird; die reale Welt bestätigt es.</li>
           <li><strong>Eine einzige Quelle der Wahrheit.</strong> Jedes Verhalten, jeder Benchmark und jede Entscheidung ist nachvollziehbar — Vertrauen wird durch Auditierbarkeit verdient.</li>
-          <li><strong>Ehrlich per Design.</strong> Ein System bewertet beide Welten, sodass die Lücke zwischen Simulation und Realität gemessen, nicht versteckt wird. Wir liefern nie, was wir nicht gemessen haben.</li>
+          <li><strong>Ehrlich per Design.</strong> Dieselbe Bewertung läuft in der Simulation, auf dem Host und auf dem Edge-Gerät, sodass die Lücken dazwischen gemessen, nicht versteckt werden. Wir liefern nie, was wir nicht gemessen haben.</li>
         </ul>
       </div>
       <div class="etalon-viz reveal">
@@ -320,7 +348,7 @@
         <div class="row"><span>Etalon · Spurabweichung</span><span>1,00×</span></div>
         <div class="row"><span>Agent · Spurabweichung</span><span class="ok">0,94×</span></div>
         <div class="row"><span>Sensorausfall-Erholung</span><span class="ok">✓</span></div>
-        <div class="row"><span>Simulation-zu-Real-Lücke</span><span>gemessen</span></div>
+        <div class="row"><span>Lücke Host – Gerät</span><span>gemessen</span></div>
         <div class="row"><span>Reproduzierbar</span><span class="ok">100 / 100</span></div>
         <div class="row"><span>Ergebnis</span><span class="ok">validiert</span></div>
       </div>
@@ -340,6 +368,29 @@
         <p>Volodymyr war zuvor Gründer und Geschäftsführer eines britischen Orbital-Raumfahrtunternehmens — eines Deep-Tech-Unternehmens, das Raketentriebwerke und Trägersysteme in Großbritannien und Europa entworfen, gebaut und getestet hat. Seine Karriere widmete er der Überführung anspruchsvoller Ingenieursleistungen in einsatzbereite Systeme.</p>
         <p>Aimrika setzt diese Mission an einer neuen Frontier fort: autonomen Maschinen die Proving Ground zu geben, die sie brauchen, um als vertrauenswürdig zu gelten. Die Überzeugung ist dieselbe — echte Fähigkeit, ehrlich aufgebaut, bewiesen bevor sie ausgeliefert wird.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="label">Team</div>
+      <h2>Ein wachsendes Team von IT- und KI-Spezialisten.</h2>
+      <p>Aimrika baut um den Gründer ein fünfköpfiges technisches Team auf. Dies sind die Rollen, die wir aufbauen.</p>
+    </div>
+    <div class="table-card reveal">
+      <table>
+        <thead><tr><th>Rolle</th><th>Schwerpunkt</th></tr></thead>
+        <tbody>
+          <tr><td>Gründer &amp; CEO</td><td>Technische Leitung und Projektführung</td></tr>
+          <tr><td>KI-Entwickler — Edge-KI-Integration</td><td>Einführung, Konfiguration und Fehlersuche bei neuer Edge-KI-Hardware und ihren Toolchains</td></tr>
+          <tr><td>KI-Entwickler — ML-Optimierung</td><td>Quantisierung, Pruning und Tensor-Optimierung, um Leistungs- und Genauigkeitsuntergrenzen zu erreichen</td></tr>
+          <tr><td>KI-Entwickler — Empfehlungs-Engine</td><td>Die Engine, die jede KI-Workload der passenden Hardware-Stufe zuordnet</td></tr>
+          <tr><td>DevOps-Engineer</td><td>Laufzeit-Routing und partitionierte Ausführung über die Hardware-Flotte</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
