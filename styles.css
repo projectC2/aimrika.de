@@ -77,6 +77,8 @@ header {
 }
 .brand { display: flex; align-items: center; gap: 11px; font-weight: 700; letter-spacing: -0.02em; font-size: 1.15rem; }
 .brand .mark { width: 30px; height: 30px; }
+.brand .lockup { height: 44px; width: auto; display: block; }
+footer .brand .lockup { height: 36px; }
 .brand .suffix { color: var(--faint); font-weight: 500; }
 .nav-links { display: flex; gap: 30px; align-items: center; }
 .nav-links a { color: var(--muted); font-size: 0.92rem; transition: color 0.2s; }
